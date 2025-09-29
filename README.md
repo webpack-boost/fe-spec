@@ -20,7 +20,7 @@
 
 - `lerna version --conventional-commits` 会为每个子包添加`CHANGELOG.md`文件，这与外部的`CHANGELOG.md`有重复的情况产生。不需要为每个子包添加，因此不使用或者传递`--no-changelog`命令。若有需要，先在`lerna.json`文件中设置changelog的预设配置：`changelogPreset: 'angular'` 或者使用命令行`lerna version --conventional-commits --changelog-preset angular`
 
-### Day1-commitlint and husky
+### Day1-commitlint and husky and changelog
 
 - 使用commitlint校验git提交信息
 
@@ -93,5 +93,16 @@ pnpm exec husky init
 # 在创建提交之前对其进行lint，使用 Husky 的 commit-msg hook
 # Windows users should use ` to escape dollar signs
 echo "pnpm dlx commitlint --edit `$1" > .husky/commit-msg
+
+```
+
+`**3.生成changelog**`
+
+```shell
+# 安装conventional-changelog
+pnpm i conventional-changelog -wD
+
+# 在package.json中添加changelog脚本，使用conventionalcommits预设
+"changelog": "npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s"
 
 ```
