@@ -7,7 +7,7 @@
     "prepare": "husky install",
     "spellcheck": "cspell lint --dot --gitignore --color --cache \"packages/**/*.@(js|cjs|mjs|ts|tsx|css|scss|md)\"",
     "clean": "rimraf node_modules",
-    "commit": "cz",
+    "commit": "cz && pnpm run changelog",
     "changelog": "npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s"
   },
   "keywords": [
