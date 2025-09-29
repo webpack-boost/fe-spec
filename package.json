@@ -1,0 +1,33 @@
+{
+  "name": "lok-front-spec",
+  "private": true,
+  "description": "编码规范工程化工具包",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "spellcheck": "cspell lint --dot --gitignore --color --cache \"packages/**/*.@(js|cjs|mjs|ts|tsx|css|scss|md)\"",
+    "clean": "rimraf node_modules",
+    "commit": "cz"
+  },
+  "keywords": [
+    "standardization",
+    "engineering",
+    "toolkit"
+  ],
+  "author": "632357135@qq.com",
+  "license": "ISC",
+  "devDependencies": {
+    "cspell": "8.9.1",
+    "lerna": "8.2.4",
+    "rimraf": "^6.0.1",
+    "@commitlint/cli": "^17.8.1",
+    "@commitlint/config-conventional": "^17.8.1",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^8.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

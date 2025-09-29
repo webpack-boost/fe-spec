@@ -1,0 +1,15 @@
+{
+  "name": "commitlint-config-lok",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Git提交规范配置",
+  "keywords": [
+    "commitlint",
+    "commit"
+  ],
+  "author": "632357135@qq.com",
+  "license": "ISC",
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^9.1.0"
+  }
+}
