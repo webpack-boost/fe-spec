@@ -19,3 +19,6 @@ node_modules/
 out/
 
 .cspellcache
+
+docs/.vitepress/dist
+docs/.vitepress/cache

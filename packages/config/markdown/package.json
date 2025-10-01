@@ -1,0 +1,15 @@
+{
+  "name": "markdownlint-config-lok",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "markdown文档规范配置",
+  "keywords": [
+    "markdownlint",
+    "markdown"
+  ],
+  "author": "632357135@qq.com",
+  "license": "ISC",
+  "peerDependencies": {
+    "markdownlint": "^0.38.0"
+  }
+}
